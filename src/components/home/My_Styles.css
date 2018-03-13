@@ -1,0 +1,188 @@
+/****************** CSS PAGE FOR HOME(NOTREGISTERED/SIGNED IN) **********************/
+
+/* Text attributes in navbar */
+
+.navbarText {
+	text-align: center;
+	font-size: 1.45em;
+}
+
+
+
+.navElement {
+	float: right;
+	font-size: 30px;
+}
+
+.homeBG {
+	background-color: #397B9E;
+	/* Green */
+}
+
+.homeBanner{
+	/*background-image:url("./HomeBanner2.jpg");*/
+	width:100%;
+	min-height:705px;		
+}
+
+#descBanner{
+	color:white;
+	font-size: 2.5em;
+	font-family:sans-serif;
+	padding:50px
+	padding-top 60px;
+}
+
+#textBanner{
+	color:white;
+	text-align:center;
+	font-size:9vw;
+}
+
+#homeTextBG {
+	color: ghostwhite;
+	text-align: center;
+	font-size: 2.5em;
+	margin-top: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: .5em;
+	font-family: "Georgia, serif";
+}
+
+#myButton {
+	color: white;
+	background-color: #336699;
+	border-color: #336699;
+	margin-bottom: 20px;
+	font-size: 3em;
+	justify-content: center;
+}
+
+.centerWrapper {
+	text-align: center;
+}
+
+
+/* Background image for homePage(Signed in) */
+
+.bgIMG {
+	/*background-image: url(Pictures/HomePic3.jpeg);*/
+	background-size: cover;
+}
+
+
+/* Container for HomePage(Signed in) */
+
+.container {
+	margin: auto;
+	width: 70%;
+	height: 900px;
+	border: .5px solid black;
+	border-top: 0;
+	background-color: white;
+}
+
+.containerMSG {
+	width: 500px;
+	height: 600px;
+	border: .5px solid black;
+	padding: 50px;
+	margin: auto;
+}
+
+.titleMSG {
+	margin-top: -50px;
+	margin-left: -50px;
+	overflow: default;
+	min-height: 76px;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+.circle {
+	height: 55px;
+	width: 55px;
+	background-color: gainsboro;
+	border-radius: 50%;
+}
+
+
+/* Style the tab */
+
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 15px 50px;
+	transition: 0.3s;
+	color: #D4D4D4;
+	margin-right: 20px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+	background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+	display: visible;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+footer {
+	/*    box-shadow: 0px 500px 0px 500px #474545;*/
+	/*	position:fixed;*/
+	/*	left: 0;*/
+	padding-bottom: 3px;
+	padding-top: 3px;
+	width: 100%;
+	background-color: #474545;
+	color: white;
+	text-align: center;
+}
+
+.footerBg {
+	background-color: #474545;
+	/* Black Gray */
+	min-height: 50px;
+	color: #fff;
+}
+
+.button {
+	background-color: #55A3AF;
+	/* Green */
+	border: 1px solid grey;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}

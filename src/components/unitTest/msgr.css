@@ -1,0 +1,112 @@
+.navbar-default {
+	margin: 0 !important;
+}
+
+.msgContainer {
+	/*background-image: url(Pictures/HomePic2.jpeg);*/
+	height: 100%;
+	width: 100%;
+}
+
+.profilePic {
+	height: 35px;
+	width: 35px;
+	background-color: #bbb;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.cList {
+	width: 350px;
+	height: 100%;
+	border-right: 2px solid #000;
+	background-color: #37383E;
+	bottom: 0;
+	color: whitesmoke;
+}
+
+#chatBox {
+	text-align: left;
+	background-color: white;
+	max-height: 800px;
+	height: 760px;
+	width: 100%;
+	border: 1px solid #ACD8F0;
+	overflow: auto;
+}
+
+.msg {
+	background-color: lightgrey;
+	height: inherit;
+	background-color: #37383E;
+	padding-bottom: 9px;
+}
+
+.sch {
+	background-color: #37383E;
+	overflow: hidden;
+	height: inherit;
+	border-right: 2px solid black;
+}
+
+.schFrame {
+	background-color: aliceblue;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 15px;
+	margin:auto;
+	width: 95%;
+}
+
+.chatFrame {
+	background-color: ghostwhite;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 15px;
+	width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+	#cList {
+		float: none;
+		margin-right: 0;
+		width: 150px;
+		border: 0;
+		border: 2px solid #000;
+		font-size-adjust: auto;
+	}
+	#msg {
+		float: none;
+		margin-right: 0;
+		width: 500px;
+		border: 0;
+		border: 2px solid #000;
+	}
+	#sch {
+		float: none;
+		margin-right: 0;
+		width: 200px;
+		border: 0;
+		border: 2px solid #000;
+	}
+}
+
+footer {
+	/*    box-shadow: 0px 500px 0px 500px #474545;*/
+	/*	position:fixed;*/
+	/*	left: 0;*/
+	padding-bottom: 10px;
+	padding-top: 20px;
+	width: 100%;
+	bottom: 0 px;
+	background-color: #474545;
+	color: white;
+	text-align: center;
+}
+
+.footerBg {
+	background-color: #474545;
+	/* Black Gray */
+	min-height: 50px;
+	color: #fff;
+}

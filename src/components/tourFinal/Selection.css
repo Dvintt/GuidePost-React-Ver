@@ -1,0 +1,155 @@
+/****************** CSS PAGE FOR Selection.html **********************/
+
+
+/* Text attributes in navbar */
+
+.navbarText {
+    text-align: center;
+    font-size: 1.45em;
+}
+
+.navElement {
+    float: right;
+    font-size: 30px;
+}
+
+.homeBG {
+    background-color: #264d73;
+    /* Green */
+}
+
+#homeTextBG {
+    color: ghostwhite;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    font-family: "Georgia, serif";
+}
+
+#myButton {
+    color: white;
+    background-color: #336699;
+    border-color: #336699;
+    margin-bottom: 20px;
+    font-size: 3em;
+    justify-content: center;
+}
+
+.centerWrapper {
+    text-align: center;
+}
+
+/* Background image for homePage(Signed in) */
+.bgIMG {
+    background-image: url(Pictures/HomePic3.jpeg);
+    background-size:cover;
+}
+
+
+/* Container for HomePage(Signed in) */
+.container {
+    margin: auto;
+    width: 70%;
+    height: 900px;
+    border: .5px solid black;
+    border-top: 0;
+    background-color: white;
+}
+
+.containerMSG {
+    width: 500px;
+    height: 600px;
+    border: .5px solid black;
+    padding: 50px;
+    margin: auto;
+}
+
+.titleMSG {
+    margin-top: -50px;
+    margin-left: -50px;
+    overflow: default;
+    min-height: 76px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    
+}
+
+.selectImg{
+    overflow: auto;    
+}
+
+.selectImg span{
+    float: left;
+    margin-top: 10px;
+    margin-left: 8%;
+    color: white; 
+    text-align: center; 
+    width: 37%;
+    margin-right: 3%;
+    font-size:1em;
+}
+
+.selectImg img{
+    float: right;
+    width: 42%; 
+    height: 300px; 
+    margin-right: 8%;
+    margin-bottom: 30px;
+}
+
+
+.circle {
+    height: 55px;
+    width: 55px;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+footer {
+    /*  box-shadow: 0px 500px 0px 500px #474545;*/
+    /*	position:fixed;*/
+    /*	left: 0;*/
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: 100%;
+    background-color: #474545;
+    color: white;
+    text-align: center;
+}
+
+.footerBg {
+    background-color: #474545;
+    /* Black Gray */
+    min-height: 50px;
+    color: #fff;
+}
+
+
+
+
+
+.textLeft{
+    margin-top: 10px;
+    margin-left: 8%;
+    color: white; 
+    text-align: center; 
+    width: 37%;
+    margin-right: 3%;
+    font-size:1em;
+}
+
+.imgRight{
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white; 
+/*    text-align: left; */
+    width: 45%;
+    height:45%;
+    font-size:1em;
+        
+}
