@@ -5,7 +5,7 @@ import{Tabs, TabLink,TabContent} from 'react-tabs-redux';
 import MessageTest from './MessageTest';
 import ScheduleTest from './ScheduleTest';
 import PictureTest from './PictureTest';
-import LoginTest from './LoginTest';
+import InputTest from './InputTest';
 // import Login from '../input/Login';
 
 
@@ -76,7 +76,7 @@ class Test extends React.Component {
                     </TabContent>
 
                     <TabContent for="tab4">
-                        <LoginTest/>
+                        <InputTest/>
 
                     </TabContent>
                 </div>
