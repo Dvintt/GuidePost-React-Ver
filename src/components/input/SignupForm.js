@@ -82,9 +82,6 @@ class SignupForm extends React.Component {
     }
 }
 
-// SignupForm.propTypes = {
-//     userSignupRequest: React.PropTypes.func.isRequired
-// };
 SignupForm.propTypes = {
     setUsername: React.PropTypes.func.isRequired,
     getUserlist: React.PropTypes.array.isRequired

@@ -2,7 +2,7 @@ import React from 'react';
 // import axios from 'axios'; 
 import { Link } from 'react-router';
 import { withRouter } from 'react-router-dom';
-import {browserHistory} from 'react-router';
+import { browserHistory } from 'react-router';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -41,10 +41,8 @@ class LoginForm extends React.Component {
         else if (auser.password !== '' && auser.password === this.state.password) {
             this.setState({ warning: "log in successful!" });
             this.props.setUsername(this.state.usernameoremail);
+            this.props.getName(this.state.usernameoremail);
             browserHistory.push('home');
-            // this.history.pushState(null, 'home');
-            // this.context.router.push('/some-path');
-            // window.location = 'http://localhost:3000/home';
         }
         
     }

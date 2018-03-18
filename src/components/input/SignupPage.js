@@ -11,18 +11,15 @@ class SignupPage extends React.Component {
     constructor(props) {
         super(props);
     }
-    // setUsername(){
-    //     this.props.inputActions.updateUsername();
-    // }
     render() {
-        // const {userSignupRequest} = this.props;
         return (
             <div className="row">
                 <div className="col-md-4 col-md-offset-4">
-                  {/* <SignupForm setUsername={this.props.inputActions.updateUsername}/> */}
-                  <SignupForm setUsername={this.props.inputActions.updateUserList} getUserlist={this.props.userlist}/>
+                  <SignupForm setUsername={this.props.inputActions.updateUserList} 
+                              getUserlist={this.props.userlist}/>
                   <br/>
-                  <LoginForm setUsername={this.props.inputActions.updateUsername} getUserlist={this.props.userlist}/>
+                  <LoginForm setUsername={this.props.inputActions.updateUsername} 
+                             getUserlist={this.props.userlist}/>
                 </div>
             </div>
         );
@@ -31,7 +28,6 @@ class SignupPage extends React.Component {
 
 SignupPage.propTypes = {
     inputActions: PropTypes.object.isRequired,
-    // user: PropTypes.object.isRequired
     userlist: PropTypes.array.isRequired
 };
 
@@ -50,19 +46,3 @@ const mapDispatchToProps = (dispatch) => {
   };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupPage);
-// export default connect((state) => { return {} }, {userSignupRequest} )(SignupPage);
-//first param:                                    //second para:
-//connect takes a state, return object            //mapping dispatch to props
-                                                  //object with action name
-
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         // setName: (username) => {
-//         //     dispatch({    //defaultly connect to reducer
-//         //         type: types.UPDATE_NAME,
-//         //         username: username    //define the action.user for changing state
-//         //     });
-//         // }
-//     };
-// };
