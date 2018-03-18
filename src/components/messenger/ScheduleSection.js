@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './msgr.css';
+import {connect} from 'react-redux';
+import * as ScheduleAction from '../../actions/ScheduleAction';
 
+
+import * as types from '../../actions/actionTypes';
+import { bindActionCreators } from 'redux';
 
 class ScheduleSection extends React.Component {
   
@@ -65,14 +70,13 @@ class ScheduleSection extends React.Component {
         const newMsg = currentMsgs.concat(this.state.userInput);
    
         this.setState({ schArray: newMsg });
+
+        this.props.createSch(this.state.userInput);
           
         this.clearTextField();
         e.preventDefault();
     }
 
-    editElement(){
-        alert("GOT EMMMM");
-    }
 
     removeElement(e){
        this.state.schArray.splice(e);
@@ -119,5 +123,9 @@ class ScheduleSection extends React.Component {
     }
 }
 
+
+ScheduleSection.propTypes = {
+    createSch: React.PropTypes.func.isRequired
+  };
 
 export default ScheduleSection;
