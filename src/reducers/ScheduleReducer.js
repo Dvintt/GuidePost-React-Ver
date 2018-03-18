@@ -1,7 +1,7 @@
 import * as types from '../actions/actionTypes';
-import initialState from './initialState';
+import schInitialState from './schInitialState';
 
-export default function ScheduleReducer(state = initialState.schedules, action) {
+export default function ScheduleReducer(state = schInitialState.sch_list, action) {
   switch (action.type) {
     case types.LOAD_SCHEDULES_SUCCESS:
       return action.schedules;

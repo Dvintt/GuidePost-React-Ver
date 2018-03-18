@@ -11,3 +11,6 @@ export const CREATE_SCHEDULE = 'CREATE_SCHEDULE' ;
 export const UPDATE_SCHEDULE = 'UPDATE_SCHEDULE' ;
 export const CREATE_MESSAGE = 'CREATE_MESSAGE' ;
 
+export const ADD_LANGUAGE = 'ADD_LANGUAGE';
+export const ADD_LOCATION = 'ADD_LOCATION';
+export const TOGGLE_TOUR = 'TOGGLE_TOUR';

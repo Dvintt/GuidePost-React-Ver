@@ -2,6 +2,10 @@ export default {
   authors: [],
   courses: [],
   schedules:[],
-  messages:[],
+  profile:[{
+    language: '',
+    location: '',
+    tour: false
+  }],
   ajaxCallsInProgress: 0
 };

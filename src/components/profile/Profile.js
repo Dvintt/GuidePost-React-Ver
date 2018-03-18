@@ -4,6 +4,12 @@ import './Profile.css';
 import Info from './Info';
 import InfoBlock from './InfoBlock';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import profileReducer from '../../reducers/profileReducer';
+import * as profileAction from '../../actions/profileAction';
+import { bindActionCreators } from 'redux';
+
 class Profile extends Component {
      render() {
          return(
@@ -12,7 +18,7 @@ class Profile extends Component {
                     <div id='profileContainer'>
                         <div className='profileBlock'>
                             <Image />
-                            <Info/>
+                            <Info profileAction={this.props.profileAction} profileInfo={this.props.profile}/>
                         </div>                            
                             <InfoBlock />
                     </div>
@@ -22,4 +28,23 @@ class Profile extends Component {
      }
 }
 
-export default Profile;
+
+Profile.propTypes = {
+    profileAction: React.PropTypes.object.isRequired,
+    profile: React.PropTypes.object.isRequired
+};
+
+
+const mapStateToProps = (state) => {
+    return{
+        profile: state
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+      profileAction: bindActionCreators(profileAction, dispatch)
+    };
+  };
+
+export default connect(mapStateToProps,mapDispatchToProps)(Profile);
