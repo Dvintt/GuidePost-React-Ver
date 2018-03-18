@@ -12,6 +12,8 @@ import * as types from '../../actions/actionTypes';
 import * as inputActions from '../../actions/inputActions';
 import { bindActionCreators } from 'redux';
 
+import Style from '../../Style';
+
 class SignupTest extends React.Component {
     constructor(props) {
         super(props);
@@ -25,7 +27,7 @@ class SignupTest extends React.Component {
     
     formList(){
         let list = this.props.userlist;
-        console.log(list);
+        // console.log(list);
         this.setState({
             listItems:list.map(function(item, username){
                 return <li key= {username} >
@@ -52,7 +54,8 @@ class SignupTest extends React.Component {
                                     getUserlist={this.props.userlist} />
                         <button onClick={this.formList}> Test </button>
                     </div>
-                    <div className="chatFrame " style={{marginLeft: 150, marginTop: 100}}>
+                    {/* <div className="chatFrame " style={{marginLeft: 150, marginTop: 100}}> */}
+                    <div className="chatFrame " style={Style.testOutput} > 
                         <ul>{this.state.listItems}</ul>
                     </div>
                 </div>

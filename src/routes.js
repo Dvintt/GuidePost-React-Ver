@@ -15,8 +15,10 @@ import Profile from './components/profile/Profile';
 import Input from './components/input/Input';
 import Test from './components/unitTest/Test';
 
+import Style from './Style';
+
 export default (
-  <Route path="/" component={App}>
+  <Route path="/" component={App} >
     <IndexRoute component={SelectionTour} />
     <Route path="courses" component={CoursesPage} />
     <Route path="course" component={ManageCoursePage} />
