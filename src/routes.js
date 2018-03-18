@@ -11,7 +11,8 @@ import HomeReg from './components/home/HomeReg';
 import SelectTour from './components/tour/SelectTour';
 import SelectionTour from './components/tourFinal/SelectionTour';
 import Profile from './components/profile/Profile';
-import LoginPage from './components/input/LoginPage';
+// import LoginPage from './components/input/LoginPage';
+import Input from './components/input/Input';
 import Test from './components/unitTest/Test';
 
 export default (
@@ -26,7 +27,7 @@ export default (
     <Route path="tour" component={SelectTour} />
     <Route path="messenger" component={MsgPage} /> 
     <Route path="tourFinal" component={SelectionTour} />
-    <Route path="input" component={LoginPage}/> 
+    <Route path="input" component={Input}/> 
     <Route path="Profile" component={Profile}/> 
     <Route path="unitTest" component={Test}/>
   </Route>
