@@ -13,14 +13,7 @@ import { Provider } from 'react-redux';
 //the second param is the store's state
 const store = createStore(combineReducers({user: userReducer, userlist: userlistReducer}) , applyMiddleware(logger));
 
-// store.subscribe(() => {
-//     console.log("Store changed: ", store.getState());
-// });
 
-// store.dispatch({    //defaultly connect to reducer
-//     type: types.UPDATE_NAME,
-//     username: "Gina"    //define the action.user for changing state
-// });
 store.dispatch({    //defaultly connect to reducer
     type: types.UPDATE_EMAIL,
     email: "gina@ucsd.edu"    //define the action.user for changing state
@@ -29,23 +22,23 @@ store.dispatch({    //defaultly connect to reducer
     type: types.UPDATE_PASSWORD,
     password: "L734200843"    //define the action.user for changing state
 });
-store.dispatch({
-    type: types.UPDATE_LIST,
-    user: {
-        username:"a",
-        email: "a",
-        password: "a"
-    }
-});
+// store.dispatch({
+//     type: types.UPDATE_LIST,
+//     user: {
+//         username:"a",
+//         email: "a",
+//         password: "a"
+//     }
+// });
 
-store.dispatch({
-    type: types.UPDATE_LIST,
-    user: {
-        username:"b",
-        email: "b",
-        password: "b"
-    }
-});
+// store.dispatch({
+//     type: types.UPDATE_LIST,
+//     user: {
+//         username:"b",
+//         email: "b",
+//         password: "b"
+//     }
+// });
 
 export default class Input extends React.Component {
     render() {
