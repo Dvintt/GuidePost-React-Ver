@@ -61,9 +61,6 @@ class Info extends Component {
                 localStorage.setItem("stLan", JSON.stringify(this.state.user_list[i]));
             }
         }
-        
-        this.props.profileAction.addLanguage(this.state.language);
-
     }
 
     handleLocation (event) {
@@ -93,7 +90,6 @@ class Info extends Component {
                 console.log(this.state.user_list);
             }
         }
-        this.props.profileAction.addLocation(this.state.location);
     }
 
     handleTg(event){
@@ -114,7 +110,7 @@ class Info extends Component {
                 ulist[i] = item;
                 this.setState({
                     user_list: ulist
-                });
+                })
 
                 // console.log(this.state.user_list);
 
@@ -123,7 +119,6 @@ class Info extends Component {
                 console.log(this.state.user_list);
             }
         }
-        this.props.profileAction.toggleTour(this.state.tg);
     }
     
     render(){
@@ -152,15 +147,5 @@ class Info extends Component {
         );
     }
 }
-
-// {this.state.language}
-// {this.state.location}
-//
-
-
-Info.propTypes = {
-    profileAction: React.PropTypes.object.isRequired,
-    profileInfo: React.PropTypes.object.isRequired
-};
 
 export default Info;
