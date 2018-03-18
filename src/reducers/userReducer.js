@@ -17,12 +17,6 @@ export default function userReducer(state = signupInitialState, action) {
         return (
             Object.assign({}, state, {password: action.password})
         );
-      
-    //   case types.UPDATE_LIST:
-    //     return [
-    //         ...state,
-    //         Object.assign({}, action.user)
-    //     ];
       default:
         return state;
     }

@@ -10,6 +10,13 @@ import { bindActionCreators } from 'redux';
 class SignupPage extends React.Component {
     constructor(props) {
         super(props);
+        this.getLoginName = this.getLoginName.bind(this);
+    }
+
+    getLoginName(name){
+        this.setState({
+            loginName: name
+        });
     }
     render() {
         return (
@@ -19,7 +26,8 @@ class SignupPage extends React.Component {
                               getUserlist={this.props.userlist}/>
                   <br/>
                   <LoginForm setUsername={this.props.inputActions.updateUsername} 
-                             getUserlist={this.props.userlist}/>
+                             getUserlist={this.props.userlist}
+                             getName={this.getLoginName} />/>
                 </div>
             </div>
         );
