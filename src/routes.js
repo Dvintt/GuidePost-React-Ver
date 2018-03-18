@@ -25,7 +25,7 @@ export default (
     <Route path="home" component={HomeReg} />
     <Route path="start" component={StartPage} />
     <Route path="tour" component={SelectTour} />
-    <Route path="messenger" component={MsgPage} /> 
+    <Route path="messenger" component={MsgPage} />
     <Route path="tourFinal" component={SelectionTour} />
     <Route path="input" component={Input}/> 
     <Route path="Profile" component={Profile}/> 
