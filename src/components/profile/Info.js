@@ -62,7 +62,7 @@ class Info extends Component {
             }
         }
         
-        this.props.profileAction.addLanguage(event);
+        this.props.profileAction.addLanguage(this.state.language);
 
     }
 
@@ -93,7 +93,7 @@ class Info extends Component {
                 console.log(this.state.user_list);
             }
         }
-        this.props.profileAction.addLocation(event);
+        this.props.profileAction.addLocation(this.state.location);
     }
 
     handleTg(event){
@@ -123,7 +123,7 @@ class Info extends Component {
                 console.log(this.state.user_list);
             }
         }
-        this.props.profileAction.toggleTour(event);
+        this.props.profileAction.toggleTour(this.state.tg);
     }
     
     render(){

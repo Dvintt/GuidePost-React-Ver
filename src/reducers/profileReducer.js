@@ -6,19 +6,19 @@ export default function ScheduleReducer(state = profileInitialState, action) {
     case types.ADD_LANGUAGE:
     return [
         ...state,
-        Object.assign({},state.language,{language:action.language})
+        Object.assign({},state,{language:action})
       ];
 
     case types.ADD_LOCATION:
       return [
         ...state,
-        Object.assign({},state.location,{location:action.location})
+        Object.assign({},state,{location:action})
       ];
 
     case types.TOGGLE_TOUR:
          return [
         ...state,
-        Object.assign({},state.tour,{tour:action.tour})
+        Object.assign({},state,{tour:action})
       ];
 
     default:
